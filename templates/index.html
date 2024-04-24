@@ -1,0 +1,195 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class = "container">
+<h1>
+    Daniel's Glen Rock High School Course Planner
+</h1>
+<img src="static/School_logo.png" alt="Logo Description" class="small-image">
+<form action="/result" method="post" id = "classContainer">
+    <button type="submit">Submit</button>
+    <br>
+
+   
+        <input list="courses" name="class1" id="class1" placeholder="Enter class name 1" required/>
+    <br>
+
+        <input list="courses" name="class2" id="class2" placeholder="Enter class name 2" required/>
+    <br>
+
+        <input list="courses" name="class3" id="class3" placeholder="Enter class name 3" required/>
+    <br>
+    
+</form>
+
+<button onclick="addClass()">Add Class</button>
+</div>
+<script>
+    function addClass() {
+        // Create a new input element
+        var newInput = document.createElement("input");
+
+        // Assign a unique ID to the new input element
+        var count = document.getElementById("classContainer").childElementCount / 2;
+        var newId = "class" + count;
+        newInput.id = newId;
+        newInput.list = "courses";
+        newInput.name = "class" + count;
+        newInput.placeholder = "Enter class name " + count;
+        newInput.required = true;
+
+        // Create a label for the new input element
+        var label = document.createElement("label");
+        label.htmlFor = newId;
+        label.appendChild(document.createTextNode("Class " + count + ":"));
+
+        // Append the new label and input element to the container
+        document.getElementById("classContainer").appendChild(newInput);
+        document.getElementById("classContainer").appendChild(document.createElement("br"));
+    }
+</script>
+<datalist id="courses">
+    <option value="English 9">
+    <option value="English 10">
+    <option value="English 11">
+    <option value="English 11: Advanced Placement (AP) English Language and Composition">
+    <option value="Advanced Placement (AP) English - Literature and Composition">
+    <option value="English 12: Modern Drama Literature">
+    <option value="English 12: More of Shakespeare">
+    <option value="English 12: Contemporary Fiction">
+    <option value="English 12: Humanities and the Arts – Concurrent Enrollment Elective">
+    <option value="Public Speaking">
+    <option value="Creative Writing A and B">
+    <option value="Journalism I">
+    <option value="Advanced Journalism II">
+    <option value="Advanced Journalism III">
+    <option value="Honors Journalism IV">
+    <option value="Writers’ Workshop A and B">
+    <option value="The Graphic Novel">
+    <option value="Literature and Social Justice">
+    <option value="English as Second Language Program">
+    <option value="Basic Art & Design (a foundation art class)">
+    <option value="Drawing & Painting (a foundation art class)">
+    <option value="Sculpture/Ceramics (a foundation art class)">
+    <option value="Advanced Sculpture/Ceramics (may be repeated)">
+    <option value="Art History: Antiquity to Post-Modern">
+    <option value="Art Major I">
+    <option value="Art Major II">
+    <option value="Honors Art Major III – Concurrent Enrollment Elective">
+    <option value="Media Arts">
+    <option value="Graphic Design">
+    <option value="Advanced Graphic Design">
+    <option value="Photo I - Introduction to Digital Photography">
+    <option value="Photo II">
+    <option value="Photo III – Concurrent Enrollment Elective">
+    <option value="Honors Digital Photography">
+    <option value="Music Production I, II, III, IV Concurrent Enrollment Elective">
+    <option value="Music Theory Lab I, II, III, and IV">
+    <option value="High School Concert Band">
+    <option value="Concert Choir">
+    <option value="Honors Concert Choir -- Concurrent Enrollment Elective">
+    <option value="Orchestra">
+    <option value="PHYSICAL EDUCATION">
+    <option value="Health 9 - Coping Skills">
+    <option value="Health 10 - Drivers Education">
+    <option value="Health 11 - Diseases and Prevention">
+    <option value="Health 12 - Family and Relationships">
+    <option value="Fitness Center A/B">
+    <option value="Algebra I">
+    <option value="Geometry">
+    <option value="Algebra II">
+    <option value="Discrete Mathematics">
+    <option value="Statistical Reasoning in Sports">
+    <option value="Honors Algebra III / Differential Calculus">
+    <option value="Pre-Calculus">
+    <option value="Honors Calculus">
+    <option value="Advanced Mathematical Analysis and Applications">
+    <option value="Advanced Placement (AP) Statistics">
+    <option value="Advanced Placement (AP) Calculus AB">
+    <option value="Advanced Placement (AP) Calculus BC">
+    <option value="Computer Science with JavaScript">
+    <option value="Computer Programming with Python">
+    <option value="AP Computer Science A">
+    <option value="AP Computer Science Principles">
+    <option value="Biology">
+    <option value="Advanced Biology">
+    <option value="Advanced Placement (AP) Biology">
+    <option value="Chemistry">
+    <option value="Honors Chemistry – Concurrent Enrollment Elective">
+    <option value="Advanced Placement (AP Chemistry)">
+    <option value="Physics">
+    <option value="Advanced Placement (AP) Physics 1">
+    <option value="Advanced Placement (AP) Physics 2">
+    <option value="Advanced Placement (AP) Physics C">
+    <option value="Environmental Science">
+    <option value="Advanced Placement (AP) Environmental Science">
+    <option value="Forensic Science – Concurrent Enrollment Elective">
+    <option value="Introduction to Anatomy and Physiology">
+    <option value="Dynamics of Health Care in Society – Concurrent Enrollment Elective">
+    <option value="World History">
+    <option value="Advanced Placement (AP) World History">
+    <option value="U.S. History I">
+    <option value="Honors U.S. History I">
+    <option value="Advanced Placement (AP) U.S. History">
+    <option value="U.S. History II">
+    <option value="Honors U.S. History II -- Concurrent Enrollment Elective">
+    <option value="Introduction to Documentary Film – Concurrent Enrollment Elective">
+    <option value="US Constitutional Law – Concurrent Enrollment Elective">
+    <option value="Introduction to Human Behavior">
+    <option value="Dictators, Human Rights, and Social Justice">
+    <option value="Advanced Placement (AP) Psychology">
+    <option value="Advanced Placement (AP) Government: U.S.">
+    <option value="Advanced Placement (AP) European History">
+    <option value="Advanced Placement (AP) Human Geography">
+    <option value="Theatre Arts I – A and B">
+    <option value="Theatre Arts II">
+    <option value="Theatre Arts III">
+    <option value="Honors Theatre Arts IV">
+    <option value="French I">
+    <option value="French II">
+    <option value="French III">
+    <option value="Honors French IV">
+    <option value="Advanced Placement (AP) French Language">
+    <option value="Latin I">
+    <option value="Latin II">
+    <option value="Latin III">
+    <option value="Honors Latin III">
+    <option value="Honors Latin IV">
+    <option value="Advanced Placement (AP) Latin: Caesar & Vergil">
+    <option value="Mandarin Chinese I">
+    <option value="Mandarin Chinese II">
+    <option value="Mandarin Chinese III">
+    <option value="Honors Mandarin Chinese IV">
+    <option value="Spanish I Fundamentals">
+    <option value="Spanish I">
+    <option value="Spanish II">
+    <option value="Spanish II Fundamentals">
+    <option value="Honors Spanish II">
+    <option value="Spanish III">
+    <option value="Honors Spanish III">
+    <option value="Spanish IV">
+    <option value="Honors Spanish IV">
+    <option value="Honors Spanish V">
+    <option value="Advanced Placement (AP) Spanish Language">
+    <option value="Accounting">
+    <option value="Economics">
+    <option value="Entrepreneurship">
+    <option value="Financial Literacy">
+    <option value="Introduction to Business">
+    <option value="Investing">
+    <option value="Marketing I">
+    <option value="Marketing II">
+    <option value="Advanced Placement (AP) Macroeconomics">
+    <option value="Advanced Placement (AP) Microeconomics">
+    <option value="Interior Design">
+    <option value="Web Design">
+    <option value="Web Design II: Advanced Page Layout">
+    <option value="Web Design III: Animation">
+    <option value="Introduction to TV/Media Broadcast">
+    <option value="TV/Media Broadcast II">
+    <option value="TV/Media Broadcast III">
+    <option value="Media/Broadcast Journalism">
+    <option value="Pre-Engineering A">
+    <option value="Pre-Engineering B">
+  </datalist>
+{% endblock %}

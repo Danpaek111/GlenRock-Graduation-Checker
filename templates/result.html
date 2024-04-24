@@ -1,0 +1,18 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Here is your current status for graduation requirement.<br> </h1>
+<br>
+
+World Language Requirement: <span style="color: blue;">{{ wl_credits }}</span> credits out of {{ wl_required_credits }} credits left to be fullfilled.<br>
+Social Studies Requirement: <span style="color: blue;">{{ ss_credits }}</span> credits out of {{ ss_required_credits }} credits left to be fullfilled.<br>
+Science Requirement: <span style="color: blue;">{{ sc_credits }}</span> credits out of {{ sc_required_credits }} credits left to be fullfilled.<br>
+Physcial Education Requirement: <span style="color: blue;">{{ pe_credits }}</span> credits out of {{ pe_required_credits }} credits left to be fullfilled.<br>
+Performing Arts Requirement: <span style="color: blue;">{{ pa_credits }}</span> credits out of {{ pa_required_credits }} credits left to be fullfilled.<br>
+Math Requirement: <span style="color: blue;">{{ mc_credits }} </span>credits out of {{ mc_required_credits }} credits left to be fullfilled.<br>
+Financial Literacy Requirement: <span style="color: blue;">{{ fl_credits }} </span>credits out of {{ fl_required_credits }} credits left to be fullfilled.<br>
+English Requirement: <span style="color: blue;">{{ ec_credits }} </span>credits out of {{ ec_required_credits }} credits left to be fullfilled.<br>
+21st Century Requirement: <span style="color: blue;">{{ stc_credits }} </span> credits out of {{ stc_required_credits }} credits left to be fullfilled.<br>
+{% endblock %}
