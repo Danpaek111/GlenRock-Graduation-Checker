@@ -1,17 +1,21 @@
 Name,Credits,Grade,States Code,Description
 Algebra I,5 credits ,Elective Grades 9-12 [3393],State Course Code,"[02052] This course is organized around families of functions with particular emphasis on linear and quadratic functions.  Students will learn to represent functions in multiple ways, to model real-world situations"
-Geometry,5 credits ,Elective Grades 9-12 [3453]    Advanced [3451],State Course Code [02072] ,"PREREQUISITE: Algebra I  PREREQUISITE FOR ADVANCED (Grade 9): Minimum grade of A- in Algebra 8 , Qualifying Score on Department  Assessment(s), AND Teacher Recommendation  PREREQUISITE FOR ADVANCED (Grades 10-12): Minimum grade of"
-Algebra II,5 credits ,Elective Grades 9-12 [3613],State Course Code,
-Discrete Mathematics,5 credits ,Elective Grades 11-12 [3753],State Course Code,
-Statistical Reasoning in Sports,5 credits ,Elective Grades 11-12 [3622],State Course Code,
-Honors Algebra III / Differential Calculus,5 credits ,Elective Grades 10-11 [3802],State Course Code,
-Pre-Calculus,5 credits ,Elective Grades 11 [3713],State Course Code,
-Honors Calculus,5 credits ,Elective Grades 11-12 [3801],State Course Code,
-Advanced Mathematical Analysis and Applications,5 credits ,Elective Grades 12 Advanced [3822],State Course Code,
-Advanced Placement (AP) Statistics,5 credits ,Elective Grades 11-12 [3900],State Course Code,
-Advanced Placement (AP) Calculus AB,5 credits ,Elective Grades 12 [3840],State Course Code,
-Advanced Placement (AP) Calculus BC,5 credits ,Elective Grades 12 [3830],State Course Code,
-Computer Science with JavaScript,2.5 credits ,Elective Grades 9-12 [3904],State Course Code,
-Computer Programming with Python,2.5 credits ,Elective Grades 9-12 [3914],State Course Code,
-AP Computer Science A,5 credits ,Elective Grades 10-12 [3920],State Course Code,
-AP Computer Science Principles,5 credits ,Elective Grades 10-12 [3921],State Course Code,
+Geometry,5 credits ,Elective Grades 9-12 [3453] Advanced [3451],State Course Code [02072] ,"PREREQUISITE: Algebra I  PREREQUISITE FOR ADVANCED (Grade 9): Minimum grade of A- in Algebra 8 , Qualifying Score on Department  Assessment(s), AND Teacher Recommendation  PREREQUISITE FOR ADVANCED (Grades 10-12): Minimum grade of"
+Advanced Geometry,5 credits ,Elective Grades 9-12 [3453],State Course Code [02072] ,"placeholder"
+Algebra II,5 credits ,Elective Grades 9-12 [3613],State Course Code ,"placeholder"
+Advanced Algebra II,5 credits ,Elective Grades 9-12 [3613],State Course Code ,"placeholder"
+Discrete Mathematics,5 credits ,Elective Grades 11-12 [3753],State Course Code ,"placeholder"
+Statistical Reasoning in Sports,5 credits ,Elective Grades 11-12 [3622],State Course Code ,"placeholder"
+Honors Algebra III / Differential Calculus,5 credits ,Elective Grades 10-11 [3802],State Course Code ,"placeholder"
+AP Precalculus,5 credits ,Elective Grade 11-12 [3841],State Course Code [02114] ,"placeholder"
+Honors Precalculus,5 credits ,Elective Grade 11-12 [3716],State Course Code [02110] ,"placeholder"
+Pre-Calculus,5 credits ,Elective Grades 11 [3713],State Course Code ,"placeholder"
+Honors Calculus,5 credits ,Elective Grades 11-12 [3801],State Course Code ,"placeholder"
+Advanced Mathematical Analysis and Applications,5 credits ,Elective Grades 12 Advanced [3822],State Course Code ,"placeholder"
+Advanced Placement (AP) Statistics,5 credits ,Elective Grades 11-12 [3900],State Course Code ,"placeholder"
+Advanced Placement (AP) Calculus AB,5 credits ,Elective Grades 12 [3840],State Course Code ,"placeholder"
+Advanced Placement (AP) Calculus BC,5 credits ,Elective Grades 12 [3830],State Course Code ,"placeholder"
+Computer Science with JavaScript,2.5 credits ,Elective Grades 9-12 [3904],State Course Code ,"placeholder"
+Computer Programming with Python,2.5 credits ,Elective Grades 9-12 [3914],State Course Code ,"placeholder"
+AP Computer Science A,5 credits ,Elective Grades 10-12 [3920],State Course Code ,"placeholder"
+AP Computer Science Principles,5 credits ,Elective Grades 10-12 [3921],State Course Code ,"placeholder"
