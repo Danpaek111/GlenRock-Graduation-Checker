@@ -49,3 +49,11 @@ button:hover {
 h1 {
     text-align: center; 
 }
+
+body {
+    background-image: url('https://www.northjersey.com/gcdn/media/2018/06/01/Bergen/NorthJersey/636634794028945509-082616-GZ-signs6-14082680.jpg?crop=2697,1523,x0,y102&width=2697&height=1523&format=pjpg&auto=webp.jpg'); /* Specify the URL of your image */
+    background-size: auto 120%; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed;
+    background-position: left -115px bottom 5px;
+}
