@@ -58,6 +58,7 @@ def find_num_of_credits_for_course(course, category_csv):
             return row['Credits']
 
 def change_string_to_credits(credits_str):
+    credits_str = credits_str.strip()
     for i in range(len(credits_str)):
         if(credits_str[i] == " "):
             return float(credits_str[:i])
