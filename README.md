@@ -15,3 +15,5 @@ This is a screenshot of my application version 1.
 Once the app opens, the user will be presented with a UI that shows textboxes with a “submit” button above as well as an “add class” button underneath. When the user clicks on a textbox they will be presented with a list of courses offered at Glen Rock High School. (The list was aggravated from Glen Rock High School official website). The user can either select a course from the list or type out the course, which will dynamically shorten the list of courses shown based on what is typed. Once they fill in all the necessary information, the “Submit” button will take them to a result page where it will show how many credits they have remaining for graduation for each category.
 
 A survey took place to receive user’s feedback and comments, which will be used for improvements and design modification of the app. The survey contains different questions that ask the user how useful, accurate, and intuitive the app was. The link to the survey is provided below.
+
+[Survey Link](https://forms.gle/TikVRLhfF4VKGJrz9)
