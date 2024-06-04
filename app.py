@@ -81,6 +81,8 @@ def count_graduation_requirement(list_of_courses_taken):
         string_credits = find_num_of_credits_for_course(course, category[0])
         credits = change_string_to_credits(string_credits)
         creds_dict[category[1]] = creds_dict[category[1]] - credits
+        if category[1] == "fin_lit": 
+            creds_dict["century_courses"] = creds_dict["century_courses"] - credits
     return creds_dict
 
 # default page
