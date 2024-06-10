@@ -12,8 +12,32 @@ This is a screenshot of my application version 1.
 
 ![homepage of ver 1](images/homepage_ver1.png)
 
-Once the app opens, the user will be presented with a UI that shows textboxes with a “submit” button above as well as an “add class” button underneath. When the user clicks on a textbox they will be presented with a list of courses offered at Glen Rock High School. (The list was aggravated from Glen Rock High School official website). The user can either select a course from the list or type out the course, which will dynamically shorten the list of courses shown based on what is typed. Once they fill in all the necessary information, the “Submit” button will take them to a result page where it will show how many credits they have remaining for graduation for each category.
+Once the app opens, the user will be presented with a UI that shows textboxes with a “submit” button above as well as an “add class” button underneath. When the user clicks on a textbox they will be presented with a list of courses offered at Glen Rock High School. (The list was aggravated from Glen Rock High School official website). The user can either select a course from the list or type out the course, which will dynamically shorten the list of courses shown based on what is typed. Once they fill in all the necessary information, the “Submit” button will take them to a result page. The result page after pressing the submit button shows the amount of credits left to be fulfilled out of the required amount of credits for the labeled category. This page shows the user which categories they still need to fulfill based on the courses entered and its purpose is to ensure that the user will take other courses that fulfill such categories.
+
 
 A survey took place to receive user’s feedback and comments, which will be used for improvements and design modification of the app. The survey contains different questions that ask the user how useful, accurate, and intuitive the app was. The link to the survey is provided below.
 
 [Survey Link](https://forms.gle/TikVRLhfF4VKGJrz9)
+
+## Video Instruction
+[Link to the Intrusction](TOBEFILLED)
+
+## Tools Used
+Flask, Python, html, CSS, Jupyter Notbook, pandas
+
+## Development Process
+
+### Past Bugs summary
+
+1. Internal Server Error with specific courses
+
+2. Financial Literacy Courses not being double counted
+
+### What was exciting (Personal Reflection)
+
+To be filled
+
+## Resources
+
+1. [Glen Rock High School program of Studies 2023-2024](https://cdnsm5-ss14.sharpschool.com/UserFiles/Servers/Server_611619/File/2023-2024%20HS%20Program%20of%20Studies%20FINAL.pdf)
+2. Used ChatGPT to aid me in coding for html and CSS
