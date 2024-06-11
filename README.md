@@ -30,6 +30,7 @@ Flask, Python, html, CSS, Jupyter Notbook, pandas
 ### Past Bugs summary
 
 1. Internal Server Error with specific courses
+There was a problem that many of the users encountered when pressing the submit button to get the results of the graduation checker. It resulted from only specific courses and after being selected in the course boxes, the app would give back an internal server e
 
 2. Financial Literacy Courses not being double counted
 
