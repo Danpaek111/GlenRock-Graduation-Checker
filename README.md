@@ -2,6 +2,7 @@
 
 ## Brief description of the program
 
+The program is a Graduation Checker that will take in courses from Glen Rock High School's Program of Studies as inputs. After entering courses into each text box and pressing submit, the user will be brought to a result page in which 
 ## Motivation
 
 I was having trouble finding courses to take for my senior year. I was struggling to find which credits I still needed to fulfill for the required categories to graduate. I wanted a way to track my remaining graduation requirements so that finding courses to take would be easier. My school does not have a graduation requirement checker, so I noticed many other students share the same problem as I do. I saw the need for a tool that can automatically check a student’s graduation requirement, and that was the start of this web app!
