@@ -30,10 +30,10 @@ Flask, Python, html, CSS, Jupyter Notbook, pandas
 ### Past Bugs summary
 
 1. Internal Server Error with specific courses
-There was a problem that many of the users encountered when pressing the submit button to get the results of the graduation checker. It resulted from only specific courses and after being selected in the course boxes, the app would give back an internal server e
+There was a problem that many of the users encountered when pressing the submit button to get the results of the graduation checker. It resulted from only specific courses and after being selected in the course boxes, the app would give back an internal server error which would prevent the user from seeing the result page with the remaining credits for each category.
 
 2. Financial Literacy Courses not being double counted
-
+This was a problem that, although users did not mention it, had to do with all courses in the financial literacy category. All of the financial literacy courses, according to the GRHS program of studies, are double counted for both the financial literacy AND 21st Century categories. My app was unable to do that so I added a piece of code that would check for when a financial literacy course would be entered and make it count for both financial literacy and 21st Century credits.
 ### What was exciting (Personal Reflection)
 
 To be filled
