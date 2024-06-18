@@ -70,13 +70,15 @@ def count_graduation_requirement(list_of_courses_taken):
             # Find the number of credits of the course --> find_num_of_credits_for_course(course)
             
             # Keep track of the number of credits taken for that category
+    set_of_courses_taken = set(list_of_courses_taken)
+    list_of_courses_taken_nodup = list(set_of_courses_taken)
     creds_dict = {}
     # for loop for each category
     for category in categories:
         required_credits = required_num_of_credits_per_category(category[1])
         creds_dict[category[1]] = required_credits
 
-    for course in list_of_courses_taken:
+    for course in list_of_courses_taken_nodup:
         category = find_category_for_course(course)
         string_credits = find_num_of_credits_for_course(course, category[0])
         credits = change_string_to_credits(string_credits)
