@@ -50,6 +50,23 @@ h1 {
     text-align: center; 
 }
 
+blue {
+    background-color: #80ced6;
+}
+
+green {
+    background-color: #45a049;
+}
+
+black {
+    background-color: black;
+}
+
+white {
+    background-color: whitesmoke;
+}
+
+
 body {
     background-image: url('https://www.northjersey.com/gcdn/media/2018/06/01/Bergen/NorthJersey/636634794028945509-082616-GZ-signs6-14082680.jpg?crop=2697,1523,x0,y102&width=2697&height=1523&format=pjpg&auto=webp.jpg');
     background-size: auto 120%;
@@ -57,3 +74,9 @@ body {
     background-attachment: fixed;
     background-position: left -115px bottom 5px;
 }
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
