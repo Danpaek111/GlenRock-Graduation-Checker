@@ -19,10 +19,11 @@ select {
 }
 
 button {
-    padding: 10px;
+    padding: 8px;
     background-color: #4CAF50;
     width: 150px; /* Set button width */
     height: 40px; /* Set button height */
+    font-size: 22px;
     color: white;
     border: none;
     border-radius: 5px;
@@ -80,3 +81,7 @@ p {
     padding: 0;
     line-height: 0;
   }
+
+p.p {
+    line-height: 2;
+}
