@@ -18,11 +18,15 @@
     <h3>
         <black><span style="color: white;"><p style="text-align:center"><black>Add your classes from all years at GRHS</black></p><br>Press the <green>submit</green> button to see what grad requirement categories need to be fullfilled</span></black>
     </h3>
-    <button type="submit"><b>Submit</b></button>
-    <input list="courses" name="class1" id="class1" placeholder="Enter class name" required/>
-        <input list="courses" name="class2" id="class2" placeholder="Enter class name" required/>
-        <input list="courses" name="class3" id="class3" placeholder="Enter class name" required/>
     <form action="/result" method="post" id = "classContainer">
+        <button type="submit"><b>Submit</b></button>
+        <br>
+        <input list="courses" name="class1" id="class1" placeholder="Enter class name" required/>
+        <br>
+        <input list="courses" name="class2" id="class2" placeholder="Enter class name" required/>
+        <br>
+        <input list="courses" name="class3" id="class3" placeholder="Enter class name" required/>
+        <br>
     </form>
     
     <button onclick="addClass()">Add Class</button>
