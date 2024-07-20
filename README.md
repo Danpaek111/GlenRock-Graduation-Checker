@@ -28,6 +28,8 @@ Flask, Python, html, CSS, Jupyter Notbook, pandas
 
 ## Development Process
 
+The first step I took in creating the app was loading all of Glen Rock High School's course information into VS Code(The app I used to make the graduation checker). I used the pdf file that held the course information and parsed the data from the pdf using PyPDF2. After obtaining all the course data, I moved on to the main bulk of the app, app.py. I began by separating the courses into separate categories that would need to be fulfilled in order for the user to graduate. Using pandas, I was able to make variable for each category and set it to its own csv(ex. phys_ed = pd.read_csv('processed_data/filled_phys_ed.csv')). Following that I created a list of tuples called categories which would allow me to refer to a category and its name. Then, I created a function that would give each category its required amount of credits. 
+
 ### Past Bugs summary
 
 1. Internal Server Error with specific courses
@@ -37,7 +39,7 @@ There was a problem that many of the users encountered when pressing the submit 
 This was a problem that, although users did not mention it, had to do with all courses in the financial literacy category. All of the financial literacy courses, according to the GRHS program of studies, are double counted for both the financial literacy AND 21st Century categories. My app was unable to do that so I added a piece of code that would check for when a financial literacy course would be entered and make it count for both financial literacy and 21st Century credits.
 ### What was exciting (Personal Reflection)
 
-To be filled
+I think the most exciting part was designing the app because I was able to use my creativity to come up with cool designs and features to make it look nice. Changing the font and background images was a great way for me to stay focused on the program and not lose interest. I think just in general, making the app look better made it more appealing to other people who tried it. Improving the appearance of the app came to me after many of the responses in my UX research form reflected needs for better design/appearance. But of course, creating the app itself was also exciting because I knew it would be the first of its kind in my school and that it would pique interest in others.
 
 ## Resources
 
