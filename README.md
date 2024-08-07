@@ -21,7 +21,7 @@ A survey took place to receive user’s feedback and comments, which will be use
 [Survey Link](https://forms.gle/TikVRLhfF4VKGJrz9)
 
 ## Video Instruction
-[Link to the Intrusction](TOBEFILLED)
+[Link to the Instruction](TOBEFILLED)
 
 ## Tools Used
 Flask, Python, html, CSS, Jupyter Notbook, pandas
