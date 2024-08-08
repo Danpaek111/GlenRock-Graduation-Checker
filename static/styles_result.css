@@ -69,7 +69,7 @@ white {
 
 
 body {
-    background-image: url('https://www.northjersey.com/gcdn/media/2018/06/01/Bergen/NorthJersey/636634794028945509-082616-GZ-signs6-14082680.jpg?crop=2697,1523,x0,y102&width=2697&height=1523&format=pjpg&auto=webp.jpg');
+    background-image: url('./result_background.png');
     background-size: auto 120%;
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-attachment: fixed;
