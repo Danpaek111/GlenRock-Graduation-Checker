@@ -10,7 +10,7 @@ I was having trouble finding courses to take for my senior year. I was strugglin
 
 This is a screenshot of my application version 1.
 
-![homepage of ver 1](images/homepage_ver1.png)
+![homepage of ver 1](images/homepage_ver1.png )
 
 Once the app opens, the user will be presented with a UI that shows textboxes with a “submit” button above as well as an “add class” button underneath. When the user clicks on a textbox they will be presented with a list of courses offered at Glen Rock High School. (The list was aggravated from Glen Rock High School official website). The user can either select a course from the list or type out the course, which will dynamically shorten the list of courses shown based on what is typed. Once they fill in all the necessary information, the “Submit” button will take them to a result page. The result page after pressing the submit button shows the amount of credits left to be fulfilled out of the required amount of credits for the labeled category. This page shows the user which categories they still need to fulfill based on the courses entered and its purpose is to ensure that the user will take other courses that fulfill such categories.
 
