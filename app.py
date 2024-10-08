@@ -107,6 +107,11 @@ def result():
     total_credits = 0
     for idx in creds_dict:
         total_credits += required_num_of_credits_per_category(idx) - creds_dict[idx]
+    if total_credits == 130:
+        last_comment = "Congratulations! You are ready to graduate!"
+    else:
+        last_comment = "You can read the program of studies to find more classes to take!"
+        
     return render_template("result.html", 
                            wl_credits=creds_dict['world_lang'], wl_required_credits = required_num_of_credits_per_category("world_lang"),
                            ss_credits=creds_dict['social_studies'], ss_required_credits = required_num_of_credits_per_category('social_studies'),
@@ -117,7 +122,8 @@ def result():
                            fl_credits=creds_dict['fin_lit'], fl_required_credits = required_num_of_credits_per_category("fin_lit"),
                            ec_credits=creds_dict['english_courses'], ec_required_credits = required_num_of_credits_per_category("english_courses"),
                            stc_credits=creds_dict['century_courses'], stc_required_credits = required_num_of_credits_per_category("century_courses"),
-                           total_credits=total_credits
+                           total_credits=total_credits,
+                           last_comment=last_comment
                            )
 
 # For Testing purpuses

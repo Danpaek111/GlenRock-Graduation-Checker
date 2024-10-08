@@ -2,25 +2,31 @@
 {% extends "layout.html" %}
 
 {% block body %}
-
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <h1><blue><span style="color: white;">Here is your current status for graduation requirement.</span></blue><br> </h1>
 <br>
 <h3>
 <center>
 <p class="p">
-<blue><span style="color: black;">World Language Requirement:</span><span style="color: lightblue;"><black> {{ wl_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ wl_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">Social Studies Requirement:</span><span style="color: lightblue;"><black> {{ ss_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ ss_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">Science Requirement:</span><span style="color: lightblue;"><black> {{ sc_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ sc_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">Physical Education Requirement:</span><span style="color: lightblue;"><black> {{ pe_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ pe_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">Performing Arts Requirement:</span><span style="color: lightblue;"><black> {{ pa_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ pa_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">Math Requirement:</span><span style="color: lightblue;"><black> {{ mc_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ mc_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">Financial Literacy Requirement:</span><span style="color: lightblue;"><black> {{ fl_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ fl_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">English Requirement:</span><span style="color: lightblue;"><black> {{ ec_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ ec_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
-<blue><span style="color: black;">21st Century Requirement:</span><span style="color: lightblue;"><black> {{ stc_credits }} </black></span><span style="color: white;">credits out of<span style="color: lightcoral;"><black> {{ stc_required_credits }} </black></span>credits left to be fullfilled.</span></blue><br>
+<b>World Language Requirement:</b> {{ wl_credits }} credits out of {{ wl_required_credits }} credits left to be fullfilled.<br>
+<b>Social Studies Requirement:</b> {{ ss_credits }} credits out of {{ ss_required_credits }} credits left to be fullfilled.<br>
+<b>Science Requirement:</b> {{ sc_credits }} credits out of {{ sc_required_credits }} credits left to be fullfilled.<br>
+<b>Physical Education Requirement:</b> {{ pe_credits }} credits out of {{ pe_required_credits }} credits left to be fullfilled.<br>
+<b>Performing Arts Requirement:</b> {{ pa_credits }} credits out of {{ pa_required_credits }} credits left to be fullfilled.<br>
+<b>Math Requirement:</b> {{ mc_credits }} credits out of {{ mc_required_credits }} credits left to be fullfilled.<br>
+<b>Financial Literacy Requirement:</b> {{ fl_credits }} credits out of {{ fl_required_credits }} credits left to be fullfilled.<br>
+<b>English Requirement:</b> {{ ec_credits }} credits out of {{ ec_required_credits }} credits left to be fullfilled.<br>
+<b>21st Century Requirement:</b> {{ stc_credits }} credits out of {{ stc_required_credits }} credits left to be fullfilled.<br>
 </p>
 </center>
 </h3>
 <h2>
-Total number of credits taken: {{ total_credits }} / 130
+    <center>Total number of credits taken: {{ total_credits }} / 130</center>
 </h2>
+<h4>
+    {{ last_comment}}
+</h4>
+<p>
+    Here is a <a href="https://cdnsm5-ss14.sharpschool.com/UserFiles/Servers/Server_611619/File/2023-2024%20HS%20Program%20of%20Studies%20FINAL.pdf" target="_blank">link</a> to Glen Rock's program of studies. 
+</p>
 {% endblock %}
