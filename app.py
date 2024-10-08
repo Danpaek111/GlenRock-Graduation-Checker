@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
 import csv
 import pandas as pd
 
@@ -103,6 +103,9 @@ def result():
     for category in creds_dict.keys():
         if creds_dict[category] < 0:
             creds_dict[category] = 0
+    total_credits = 0
+    for idx in creds_dict:
+        total_credits += required_num_of_credits_per_category(idx) - creds_dict[idx]
     return render_template("result.html", 
                            wl_credits=creds_dict['world_lang'], wl_required_credits = required_num_of_credits_per_category("world_lang"),
                            ss_credits=creds_dict['social_studies'], ss_required_credits = required_num_of_credits_per_category('social_studies'),
@@ -113,6 +116,7 @@ def result():
                            fl_credits=creds_dict['fin_lit'], fl_required_credits = required_num_of_credits_per_category("fin_lit"),
                            ec_credits=creds_dict['english_courses'], ec_required_credits = required_num_of_credits_per_category("english_courses"),
                            stc_credits=creds_dict['century_courses'], stc_required_credits = required_num_of_credits_per_category("century_courses"),
+                           total_credits=total_credits
                            )
 
 # For Testing purpuses
