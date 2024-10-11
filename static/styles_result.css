@@ -1,21 +1,25 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: 50px;
+    z-index: 2;
 }
 
 #classContainer {
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    z-index: 2;
 }
 
 select {
     width: 200px;
     padding: 5px;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 button {
@@ -28,15 +32,18 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 2;
 }
 
 button:hover {
     background-color: #45a049;
+    z-index: 2;
 }
 
 .small-image {
     width: 300px; /* Set desired width */
     height: auto; /* Maintain aspect ratio */
+    z-index: 2;
 }
 
 .container {
@@ -45,43 +52,62 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    z-index: 2;
   }
 
 h1 {
     text-align: center; 
+    z-index: 2;
 }
 
 blue {
     background-color: #80ced6;
+    z-index: 2;
 }
 
 green {
     background-color: #45a049;
+    z-index: 2;
 }
 
 black {
     background-color: black;
+    z-index: 2;
 }
 
 white {
     background-color: whitesmoke;
+    z-index: 2;
 }
 
 
 body {
-    /* background-image: url('./result_background.png'); */
-    background-size: auto 120%;
+    position: relative;
+    background-image: url('./result_background.png');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full height of the viewport */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed;
-    background-position: left -115px bottom 5px;
+}
+
+.overlay {
+    position: fixed; /* Use fixed positioning to cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    z-index: 1; /* Place it above the background image */
 }
 
 p {
     margin: 0;
     padding: 0;
     line-height: 0;
+    z-index: 2;
   }
 
 p.p {
     line-height: 2;
+    z-index: 2;
 }
