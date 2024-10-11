@@ -91,7 +91,7 @@ body {
 }
 
 .overlay {
-    position: fixed; /* Use fixed positioning to cover the viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw; /* Full width of the viewport */
