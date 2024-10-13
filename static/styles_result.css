@@ -80,7 +80,15 @@ white {
     z-index: 2;
 }
 
-
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 22px;
+}
+subject {
+    font-size: 27px;
+}
 body {
     position: relative;
     background-image: url('./result_background.png');
@@ -88,6 +96,9 @@ body {
     background-position: center; /* Center the image */
     height: 100vh; /* Full height of the viewport */
     background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+margin {
+    margin-left: 25px;
 }
 
 .overlay {

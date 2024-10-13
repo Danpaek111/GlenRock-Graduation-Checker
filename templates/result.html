@@ -4,31 +4,30 @@
 {% block body %}
 <div class = "overlay">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<h1>Here is your current status for graduation requirement.</h1>
-<br>
+<h1><u>Here is your current status for graduation requirement.</u></h1>
 <h3>
 <center>
 <p class="p">
-<b>World Language Requirement:</b> {{ wl_credits }} credits out of {{ wl_required_credits }} credits left to be fullfilled.<br>
-<b>Social Studies Requirement:</b> {{ ss_credits }} credits out of {{ ss_required_credits }} credits left to be fullfilled.<br>
-<b>Science Requirement:</b> {{ sc_credits }} credits out of {{ sc_required_credits }} credits left to be fullfilled.<br>
-<b>Physical Education Requirement:</b> {{ pe_credits }} credits out of {{ pe_required_credits }} credits left to be fullfilled.<br>
-<b>Performing Arts Requirement:</b> {{ pa_credits }} credits out of {{ pa_required_credits }} credits left to be fullfilled.<br>
-<b>Math Requirement:</b> {{ mc_credits }} credits out of {{ mc_required_credits }} credits left to be fullfilled.<br>
-<b>Financial Literacy Requirement:</b> {{ fl_credits }} credits out of {{ fl_required_credits }} credits left to be fullfilled.<br>
-<b>English Requirement:</b> {{ ec_credits }} credits out of {{ ec_required_credits }} credits left to be fullfilled.<br>
-<b>21st Century Requirement:</b> {{ stc_credits }} credits out of {{ stc_required_credits }} credits left to be fullfilled.<br>
+<subject><u>World Language</u></subject> Requirement: <subject>{{ wl_credits }}/{{ wl_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>Social Studies</u></subject> Requirement: <subject>{{ ss_credits }}/{{ ss_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>Science</u></subject> Requirement: <subject>{{ sc_credits }}/{{ sc_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>Physical Education</u></subject> Requirement: <subject>{{ pe_credits }}/{{ pe_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>Performing Arts</u></subject> Requirement: <subject>{{ pa_credits }}/{{ pa_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>Math</u></subject> Requirement: <subject>{{ mc_credits }}/{{ mc_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>Financial Literacy</u></subject> Requirement: <subject>{{ fl_credits }}/{{ fl_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>English</u></subject> Requirement: <subject>{{ ec_credits }}/{{ ec_required_credits }}</subject> credits left to be fullfilled.<br>
+<subject><u>21st Century</u></subject> Requirement: <subject>{{ stc_credits }}/{{ stc_required_credits }}</subject> credits left to be fullfilled.<br>
 </p>
 </center>
 </h3>
 <h2>
     <center>Total number of credits taken: {{ total_credits }} / 130</center>
 </h2>
-<h4>
-    {{ last_comment}}
-</h4>
-<p>
-    Here is a <a href="https://cdnsm5-ss14.sharpschool.com/UserFiles/Servers/Server_611619/File/2023-2024%20HS%20Program%20of%20Studies%20FINAL.pdf" target="_blank">link</a> to Glen Rock's program of studies. 
-</p>
+<h3>
+    <margin>{{ last_comment}}</margin>
+</h3>
+<h3>
+<margin>Here is a <a href="https://cdnsm5-ss14.sharpschool.com/UserFiles/Servers/Server_611619/File/2023-2024%20HS%20Program%20of%20Studies%20FINAL.pdf" target="_blank">link</a> to Glen Rock's program of studies.</margin>
+</h3>
 </div>
 {% endblock %}
