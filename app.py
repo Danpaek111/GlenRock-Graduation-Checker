@@ -165,7 +165,7 @@ def download():
     return Response(
         output.getvalue(),
         mimetype="text/csv",
-        headers={"Content-Disposition": "attachment;filename=example.csv"},
+        headers={"Content-Disposition": "attachment;filename=classes_taken.csv"},
     )
 
 # For Testing purpuses
