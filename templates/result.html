@@ -26,6 +26,13 @@
 <h3>
     <margin>{{ last_comment}}</margin>
 </h3>
+<h4>
+    You can click the download button to save your input.
+</h4>
+<form action="/download" method="POST">
+    <input type="hidden" name="list_classes" value="{{list_classes}}">
+    <button type="submit">Download</button>
+</form>
 <h3>
 <margin>Here is a <a href="https://cdnsm5-ss14.sharpschool.com/UserFiles/Servers/Server_611619/File/2023-2024%20HS%20Program%20of%20Studies%20FINAL.pdf" target="_blank">link</a> to Glen Rock's program of studies.</margin>
 </h3>

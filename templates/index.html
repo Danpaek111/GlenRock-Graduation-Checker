@@ -16,10 +16,16 @@
         <black><span style="color: white;">Instructions:</span></black>
     </h2>
     <h3>
-        <black><span style="color: white;"><p style="text-align:center"><black>Add your classes from all years at GRHS</black></p><br>Press the <green>submit</green> button to see what grad requirement categories need to be fullfilled</span></black>
+        <black>
+            <span style="color: white;"><p style="text-align:center"><black>Add your classes from all years at GRHS</black></p><br>Press the <green>submit</green> button to see what grad requirement categories need to be fullfilled <br>
+            You can input the downloaded file from your last submission and add more classes you took!</span>
+
+        </black>
     </h3>
-    <form action="/result" method="post" id = "classContainer">
+    <form action="/result" method="post" id = "classContainer" enctype="multipart/form-data">
         <button type="submit"><b>Submit</b></button>
+        <br>
+        <input type="file" name="file" accept=".csv">
         <br>
         <input list="courses" name="class1" id="class1" placeholder="Enter class name" required/>
         <br>

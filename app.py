@@ -1,7 +1,9 @@
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template, request, Response, url_for, flash, redirect
 import csv
 import pandas as pd
 from io import StringIO
+import os
+import ast
 
 app = Flask(__name__)
 
@@ -100,6 +102,19 @@ def result():
     for key in request.form:
         if "class" in key:
             list_classes.append(request.form[key])
+
+    if "file" in request.files:
+        file = request.files["file"]
+        if file and file.filename.endswith(".csv"):
+            try:
+                df = pd.read_csv(file)
+                for i in range(len(df)):
+                    print(df.iloc[i])
+                    list_classes.append(df.iloc[i]["Classes Taken"])
+            except Exception as e:
+                flash("Invalid file type, please upload a CSV")
+                return redirect(request.url)
+
     creds_dict = count_graduation_requirement(list_classes)
     for category in creds_dict.keys():
         if creds_dict[category] < 0:
@@ -110,21 +125,48 @@ def result():
     if total_credits == 130:
         last_comment = "Congratulations! You are ready to graduate!"
     else:
-        last_comment = "You can read the program of studies to find more classes to take!"
-        
-    return render_template("result.html", 
-                           wl_credits=creds_dict['world_lang'], wl_required_credits = required_num_of_credits_per_category("world_lang"),
-                           ss_credits=creds_dict['social_studies'], ss_required_credits = required_num_of_credits_per_category('social_studies'),
-                           sc_credits=creds_dict['science_courses'], sc_required_credits = required_num_of_credits_per_category("science_courses"),
-                           pe_credits=creds_dict['phys_ed'], pe_required_credits = required_num_of_credits_per_category("phys_ed"),
-                           pa_credits=creds_dict['performing_arts'], pa_required_credits = required_num_of_credits_per_category("performing_arts"),
-                           mc_credits=creds_dict['math_courses'], mc_required_credits = required_num_of_credits_per_category("math_courses"),
-                           fl_credits=creds_dict['fin_lit'], fl_required_credits = required_num_of_credits_per_category("fin_lit"),
-                           ec_credits=creds_dict['english_courses'], ec_required_credits = required_num_of_credits_per_category("english_courses"),
-                           stc_credits=creds_dict['century_courses'], stc_required_credits = required_num_of_credits_per_category("century_courses"),
-                           total_credits=total_credits,
-                           last_comment=last_comment
-                           )
+        last_comment = (
+            "You can read the program of studies to find more classes to take!"
+        )
+
+    return render_template(
+        "result.html",
+        wl_credits=creds_dict["world_lang"],
+        wl_required_credits=required_num_of_credits_per_category("world_lang"),
+        ss_credits=creds_dict["social_studies"],
+        ss_required_credits=required_num_of_credits_per_category("social_studies"),
+        sc_credits=creds_dict["science_courses"],
+        sc_required_credits=required_num_of_credits_per_category("science_courses"),
+        pe_credits=creds_dict["phys_ed"],
+        pe_required_credits=required_num_of_credits_per_category("phys_ed"),
+        pa_credits=creds_dict["performing_arts"],
+        pa_required_credits=required_num_of_credits_per_category("performing_arts"),
+        mc_credits=creds_dict["math_courses"],
+        mc_required_credits=required_num_of_credits_per_category("math_courses"),
+        fl_credits=creds_dict["fin_lit"],
+        fl_required_credits=required_num_of_credits_per_category("fin_lit"),
+        ec_credits=creds_dict["english_courses"],
+        ec_required_credits=required_num_of_credits_per_category("english_courses"),
+        stc_credits=creds_dict["century_courses"],
+        stc_required_credits=required_num_of_credits_per_category("century_courses"),
+        total_credits=total_credits,
+        last_comment=last_comment,
+        list_classes=list_classes,
+    )
+
+@app.route("/download", methods=["POST"])
+def download():
+    user_input = request.form["list_classes"]
+
+    df = pd.DataFrame({"Classes Taken": ast.literal_eval(user_input)})
+    output = StringIO()
+    df.to_csv(output, index=False)
+    output.seek(0)
+    return Response(
+        output.getvalue(),
+        mimetype="text/csv",
+        headers={"Content-Disposition": "attachment;filename=example.csv"},
+    )
 
 # For Testing purpuses
 def main():
